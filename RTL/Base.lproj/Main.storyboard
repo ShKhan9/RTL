@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RTL" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VIJ-zK-zqg">
+                                <rect key="frame" x="0.0" y="20" width="375" height="300"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="new_trip2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Wdj-gx-Qma">
+                                        <rect key="frame" x="10" y="105" width="90" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Wdj-gx-Qma" secondAttribute="height" id="rAu-Sq-eHE"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HyZ-ky-ses">
+                                        <rect key="frame" x="108" y="105" width="29" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sub-title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNZ-3o-tpL">
+                                        <rect key="frame" x="108" y="174" width="64" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.2666666667" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Wdj-gx-Qma" firstAttribute="centerY" secondItem="VIJ-zK-zqg" secondAttribute="centerY" id="1tj-Ie-oAd"/>
+                                    <constraint firstItem="Wdj-gx-Qma" firstAttribute="height" secondItem="VIJ-zK-zqg" secondAttribute="height" multiplier="0.3" id="9cs-QX-8I6"/>
+                                    <constraint firstItem="Wdj-gx-Qma" firstAttribute="leading" secondItem="VIJ-zK-zqg" secondAttribute="leading" constant="10" id="AiB-bx-ybU"/>
+                                    <constraint firstAttribute="height" constant="300" id="GWa-LI-dqe"/>
+                                    <constraint firstItem="aNZ-3o-tpL" firstAttribute="leading" secondItem="Wdj-gx-Qma" secondAttribute="trailing" constant="8" id="RJM-Pj-Ym0"/>
+                                    <constraint firstItem="HyZ-ky-ses" firstAttribute="leading" secondItem="Wdj-gx-Qma" secondAttribute="trailing" constant="8" id="ij8-Ja-cBA"/>
+                                    <constraint firstItem="HyZ-ky-ses" firstAttribute="top" secondItem="Wdj-gx-Qma" secondAttribute="top" id="x70-je-EaP"/>
+                                    <constraint firstItem="aNZ-3o-tpL" firstAttribute="bottom" secondItem="Wdj-gx-Qma" secondAttribute="bottom" id="xUO-3b-tI3"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGI-UG-B3G">
+                                <rect key="frame" x="164.5" y="393" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qLM-be-F4o"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pGI-UG-B3G" firstAttribute="top" secondItem="VIJ-zK-zqg" secondAttribute="bottom" constant="73" id="AYR-av-KLh"/>
+                            <constraint firstItem="VIJ-zK-zqg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VCm-9J-mSv"/>
+                            <constraint firstAttribute="trailing" secondItem="VIJ-zK-zqg" secondAttribute="trailing" id="Vzk-hk-5bU"/>
+                            <constraint firstItem="VIJ-zK-zqg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="fcA-I7-e2A"/>
+                            <constraint firstItem="pGI-UG-B3G" firstAttribute="centerX" secondItem="VIJ-zK-zqg" secondAttribute="centerX" id="ouD-Ci-qDC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="allView" destination="VIJ-zK-zqg" id="IJ9-pa-BlH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="new_trip2.png" width="358" height="358"/>
+    </resources>
+</document>
